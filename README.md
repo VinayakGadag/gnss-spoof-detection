@@ -3,6 +3,11 @@
 ### Hackathon Submission — Kaizen × ARIES × NyneOS (IIT Delhi)
 
 ---
+## Quick Run
+
+pip install -r requirements.txt
+python src/train.py
+python src/predict.py
 
 # 1. Project Overview
 
