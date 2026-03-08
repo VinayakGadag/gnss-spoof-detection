@@ -5,9 +5,9 @@
 ---
 ## Quick Run
 
-pip install -r requirements.txt
-python src/train.py
-python src/predict.py
+-pip install -r requirements.txt
+-python src/train.py
+-python src/predict.py
 
 # 1. Project Overview
 
@@ -52,7 +52,7 @@ The model learns patterns from the training dataset and predicts spoofed signals
 
 The detection pipeline combines **signal feature engineering with machine learning models**.
 
-`
+```
 GNSS Signal Dataset
         ↓
 Data Preprocessing & Validation
@@ -73,7 +73,7 @@ Ensemble Prediction
 Timestamp-Level Aggregation
         ↓
 Final Spoof Detection Output
-`
+```
 
 This architecture combines **data-driven learning with domain knowledge from GNSS signal behavior**.
 
@@ -81,7 +81,7 @@ This architecture combines **data-driven learning with domain knowledge from GNS
 
 # 4. Repository Structure
 
-`
+```
 GNSS/
 │
 ├── data/
@@ -109,7 +109,7 @@ GNSS/
 │   └── submission.csv
 │
 └── README.md
-`
+```
 
 ---
 
