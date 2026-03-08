@@ -1,0 +1,172 @@
+GNSS Anti-Spoofing AI Hackathon
+Organized by NyneOS Technologies
+in collaboration with Kaizen 2026, EES, ARIES IIT Delhi
+Problem Statement Document
+
+1 About NyneOS Technologies
+NyneOS Technologies is a deep-tech company focused on solving complex, high-impact
+problems across domains such as finance, education, automation, and health. The
+company emphasizes strong engineering fundamentals, interdisciplinary thinking, and
+advanced technology to build practical and scalable real-world solutions. NyneOS has
+strong expertise in FinTech-driven systems and applied AI.
+2 Detailed Problem Statement – GNSS Anti-Spoofing
+2.1 Background and Context
+Global Navigation Satellite Systems (GNSS) form the backbone of modern navigation,
+timing, and synchronization across:
+•Aviation
+•Maritime navigation
+•Autonomous drones
+•Logistics
+•Telecommunications
+•Financial systems
+•National infrastructure
+GNSS signals are inherently low-power and broadcast in open environments, making them
+vulnerable to spoofing attacks.
+Spoofing involves transmitting manipulated signals that cause receivers to compute incorrect
+position, velocity, or timing information. Such attacks may lead to navigation failures,
+safety risks, financial losses, and infrastructure instability.
+2.2 Core Problem Definition
+Design and develop an AI-driven solution capable of detecting GNSS spoofing attempts
+by analyzing signal behavior, temporal patterns, and inconsistencies over time.
+Solutions must demonstrate:
+•Practical feasibility
+•Robustness
+•Generalization capability
+•Clear engineering reasoning
+The focus is strictly on detection and resilience, not on generating spoofing attacks.
+2.3 Expected Capabilities
+The proposed solution should:
+1
+
+•Analyze GNSS signal characteristics and temporal dynamics
+•Identify anomalies indicative of spoofing
+•Differentiate genuine signals from manipulated signals
+•Operate robustly across datasets and conditions
+•Demonstrate detection through a prototype or evaluable system
+2.4 Permitted Technical Approaches
+Participants may explore:
+Machine Learning Techniques
+•Support Vector Machines (SVM)
+•Random Forests
+•Classical anomaly detection models
+Deep Learning Approaches
+•CNNs on raw signals or spectrograms
+•LSTM / Transformer-based temporal models
+Hybrid Approaches
+•Classical signal processing (frequency-domain, wavelets, correlator analysis)
+•Combined AI/ML architectures
+2.5 Evaluation Philosophy
+Solutions will be evaluated on:
+•Generalization across datasets
+•Fairness and absence of data leakage
+•Robustness to distribution shifts
+•Clarity of documentation and research thinking
+3 Competition Structure
+The competition will be conducted in three rounds:
+3.1 Round 1 – Model Development
+Participants must build a GNSS spoofing detection model based on the provided Problem
+Statement and dataset.
+Important:Participants mustnotsubmit the dataset. They must only use the officially
+provided dataset.
+Round 1 Deliverables:
+2
+
+•Complete GitHub Repository (well-structured and reproducible)
+•README.md explaining:
+–Problem understanding
+–Feature engineering
+–Model architecture
+–Training methodology
+–Justification of design decisions
+•Output CSV file (strictly named as per instructions)
+•The CSV must contain predictions for the provided test dataset
+The CSV format must match the submission format provided with the dataset. Column
+names must be identical to those in the training dataset for the target variable.
+3.2 Round 2 – Presentation + Updated Problem Statement
+Shortlisted teams will:
+•Present their Round 1 model
+•Explain design decisions and modeling choices
+•Demonstrate understanding of spoof detection principles
+After Round 2 presentations, a slightly updated and more challenging Problem Statement
+will be released.
+Teams will be given two days to improve and adapt their solution accordingly.
+3.3 Round 3 – Final Presentation of Updated Solution
+Teams will present their updated model addressing the revised Problem Statement.
+Evaluation will consider:
+•Robustness
+•Adaptability
+•Engineering depth
+•Practical feasibility
+•Clarity of reasoning
+4 Dataset Structure (Train / Test / Submission Format)
+The dataset consists of:
+•Training Dataset
+•Test Dataset
+•Submission Format File
+3
+
+Participants must train on the training dataset and generate predictions for the test
+dataset in the prescribed submission format.
+Official Dataset Files:
+Access Dataset Files (Google Drive)
+Participants are strongly advised to review the dataset structure carefully before model
+development.
+5 Dataset Columns and Feature Description
+Column Meaning Why Important for Spoof
+Detection
+PRN Satellite ID Spoofing may introduce fake or
+inconsistent satellite IDs
+Carrier Doppler hz Frequency shift Spoofed signals often show abnormal
+Doppler shifts
+Pseudorange m Distance to satellite Spoofing creates geometric
+inconsistencies
+RX time Receiver timestamp Enables temporal pattern analysis
+TOW at current symbol s Satellite transmit time Timing mismatch may indicate spoofing
+Carrier phase cycles Signal phase Spoofing can cause sudden phase
+discontinuities
+EC Early correlator output Helps detect signal shape distortion
+LC Late correlator output Helps detect signal shape distortion
+PC Prompt correlator output Reference signal quality indicator
+PIP Signal quality metric Useful feature for anomaly detection
+PQP Signal quality metric Useful feature for anomaly detection
+TCD Code delay Spoofing alters delay characteristics
+CN0 Carrier-to-noise ratio Spoofed signals often exhibit abnormal
+strength patterns
+6 Evaluation Strategy
+The dataset is a classification problem and contains imbalanced classes.
+Round 1 Evaluation Metric
+Primary evaluation metric:
+Weighted F1 Score
+4
+
+Weighted F1 is used to fairly evaluate performance across imbalanced classes and prevent
+bias toward majority class predictions.
+Submissions will also be checked for:
+•Data leakage
+•Invalid format
+•Hardcoded predictions
+Round 2 and Round 3 Evaluation
+Composite evaluation based on:
+•Quantitative model performance
+•Generalization ability
+•Robustness under updated constraints
+•Documentation quality
+•Research depth and first-principle reasoning
+•Presentation clarity
+7 Timeline
+•Registration Deadline: 8 March, 11:59 PM
+•Round 1 Submission Deadline: 8 March, 11:59 PM
+•Round 2 Presentation: 9 March
+•Updated Problem Statement Release: After Round 2
+•Round 3 Final Presentation: 12 March
+•Results Announcement: 12 March
+8 Communication & Support
+For real-time updates, announcements, and discussion related to the hackathon, participants
+can join the official WhatsApp group:
+Join WhatsApp Group for Hackathon Details
+Participants are encouraged to use the group for clarifications, collaboration updates, and
+important announcements.
+Final Note
+This competition rewards engineering discipline, first-principle reasoning, research depth,
+and robust system design aimed at real-world deployability.
+5
