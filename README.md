@@ -5,9 +5,25 @@
 ---
 ## Quick Run
 
--pip install -r requirements.txt
--python src/train.py
--python src/predict.py
+Follow the steps below to run the project.
+
+### 1. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Train the model
+
+```bash
+python src/train.py
+```
+
+### 3. Generate predictions
+
+```bash
+python src/predict.py
+```
 
 # 1. Project Overview
 
